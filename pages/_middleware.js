@@ -22,6 +22,6 @@ export default async function middleware(request) {
       url.includes("/dashboard") ||
       url.includes("/creatProject"))
   ) {
-    return NextResponse.redirect("http://localhost:3001/signIn");
+    return NextResponse.redirect("https://all-with-in-backend.vercel.app/signIn");
   }
 }
