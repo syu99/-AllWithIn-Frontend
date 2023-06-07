@@ -20,7 +20,7 @@ function MyTeam() {
 
     useEffect(() => {
         const projectId = project[0]._id
-        fetch(`http://localhost:3000/projects/crewProject/${projectId}`)
+        fetch(`https://all-with-in-backend.vercel.app/projects/crewProject/${projectId}`)
           .then((response) => response.json())
           .then((data) => {
             setCrew(data.crew);

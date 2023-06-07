@@ -33,7 +33,7 @@ function SignIn() {
       return;
     }
 
-    fetch("http://localhost:3000/users/signin", {
+    fetch("https://all-with-in-backend.vercel.app/users/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -42,7 +42,7 @@ function SignIn() {
       .then((data) => {
         console.log("DATA", data);
         if (data.result) {
-          fetch(`http://localhost:3000/users/userData/${data.token}`)
+          fetch(`https://all-with-in-backend.vercel.app/users/userData/${data.token}`)
             .then((response) => response.json())
             .then((dataUser) => {
               console.log(dataUser);

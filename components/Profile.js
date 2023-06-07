@@ -72,7 +72,7 @@ function Profile() {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3000/users/userData/${user.token}`)
+    fetch(`https://all-with-in-backend.vercel.app/users/userData/${user.token}`)
       .then((response) => response.json())
       .then((data) => {
         console.log("lol", data);
@@ -107,7 +107,7 @@ function Profile() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/users/signup", {
+        const response = await fetch("https://all-with-in-backend.vercel.app/users/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
         });
@@ -118,7 +118,7 @@ function Profile() {
             const formData = new FormData();
             formData.append("cv", inputCVRef.current.files[0]);
             const cvResponse = await fetch(
-              "http://localhost:3000/users/updateCV",
+              "https://all-with-in-backend.vercel.app/users/updateCV",
               {
                 method: "POST",
                 body: formData,
@@ -133,7 +133,7 @@ function Profile() {
             const formData = new FormData();
             formData.append("avatar", inputPhotoRef.current.files[0]);
             const avatarResponse = await fetch(
-              "http://localhost:3000/users/updateAvatar",
+              "https://all-with-in-backend.vercel.app/users/updateAvatar",
               {
                 method: "POST",
                 body: formData,

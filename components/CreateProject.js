@@ -35,7 +35,7 @@ function CreateProject() {
       token: user.token,
     };
 
-    fetch("http://localhost:3000/projects/addProject", {
+    fetch("https://all-with-in-backend.vercel.app/projects/addProject", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(myData),
@@ -49,7 +49,7 @@ function CreateProject() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/locations/allLocation")
+    fetch("https://all-with-in-backend.vercel.app/locations/allLocation")
       .then((response) => response.json())
       .then((data) => {
         let formattedData = data.locations.map((data) => {
