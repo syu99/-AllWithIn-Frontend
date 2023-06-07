@@ -1,0 +1,75 @@
+.mainContainer {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  display: flex;
+  background: linear-gradient(0.35turn, #87c0cd 75%, rgb(255, 255, 255) 50%);
+  padding: 5% 25%;
+}
+
+.contentContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 3px solid #152232;
+  box-shadow: -30px 25px 0px #152232;
+  border-radius: 10px;
+  padding: 20px;
+}
+.inputContainer {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+  background-color: #87c0cd;
+  padding: 40px 100px;
+  border-radius: 5px;
+  border: 2px solid #152232;
+  margin-bottom: 50px;
+}
+
+.inputComponent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  height: 60px;
+  background: #ffffff;
+  border: 3px solid #152232;
+  box-shadow: -8px 10px 0px #152232;
+  padding: 10px;
+  width: 60%;
+}
+
+.removeBtn {
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  background-color: #152232;
+  border-radius: 3px;
+}
+
+.inputBox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.labelStyle {
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}

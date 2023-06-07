@@ -1,0 +1,73 @@
+.mainContainer {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0.35turn, #87c0cd 75%, white 50%);
+  padding: 100px 10%;
+}
+
+.contentContainer {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  gap: 20px;
+}
+
+.rightDiv {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  height: 60px;
+  background: #ffffff;
+  border: 3px solid #152232;
+  box-shadow: -8px 10px 0px #152232;
+  padding: 10px;
+  width: 80%;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3px;
+}
+
+.labelStyle {
+  font-weight: bold;
+}
+
+/*----------------- txt area -----------------*/
+
+.txtArea {
+  height: 80%;
+  background: #ffffff;
+  border: 3px solid #152232;
+  box-shadow: -30px 30px 0px #152232;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 3px;
+}
+
+.nextStepBtn {
+  align-self: flex-end;
+}
+
+.errorTxt {
+  font-size: small;
+  color: red;
+}
